@@ -1,0 +1,10 @@
+.vs/
+bin/
+int/
+*.user
+Debug/
+MinSizeRel/
+RelWithDebInfo/
+Release/
+game-math.dir/
+glad.dir/
