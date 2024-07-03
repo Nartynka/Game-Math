@@ -1,7 +1,7 @@
 #include "dwgSimpleGraphics.h"
 
 // entry point for the app (using WinMain, so no console appears, just the rendering window)
-int WinMain()
+int SphereIntersection()
 {
 	// init window and rendering with given width, height, and title of the window
 	if (!dwgInitApp(2500, 1300, "DwG - Game Math"))
@@ -58,7 +58,7 @@ int WinMain()
 			// sin(alpha) * |cp| = x
 
 			float x = length(cross(normalize(v), cp));
-			
+
 			bool intersecting = x < r && dot(v, cp) > 0;
 
 			dwgDebugLine(p, p + v, { 1.0f, 0.0f, 1.0f });
