@@ -1,7 +1,8 @@
 #include "dwgSimpleGraphics.h"
+#include "Exercises.h"
 
 // entry point for the app (using WinMain, so no console appears, just the rendering window)
-int SolarSystem_Vec()
+int VectorSolarSystem()
 {
 	// init window and rendering with given width, height, and title of the window
 	if (!dwgInitApp(1600, 900, "DwG - Game Math"))
