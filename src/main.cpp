@@ -4,5 +4,6 @@
 // entry point for the app (using WinMain, so no console appears, just the rendering window)
 int WinMain()
 {
-	SphereIntersection();
+	SimpleSphereCollision();
 }
+	

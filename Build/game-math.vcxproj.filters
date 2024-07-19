@@ -13,6 +13,9 @@
     <ClCompile Include="D:\Projects\DwGGameMath\src\main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="..\src\SimpleSphereCollision.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="D:\Projects\DwGGameMath\lib\vectormath\common.hpp">

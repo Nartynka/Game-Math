@@ -277,6 +277,7 @@
     <ClInclude Include="D:\Projects\DwGGameMath\lib\vectormath\vec2d.hpp" />
     <ClInclude Include="D:\Projects\DwGGameMath\lib\vectormath\vectormath.hpp" />
     <ClInclude Include="D:\Projects\DwGGameMath\src\dwgSimpleGraphics.h" />
+    <ClCompile Include="..\src\SimpleSphereCollision.cpp" />
     <ClCompile Include="..\src\VectorSolarSystem.cpp" />
     <ClCompile Include="D:\Projects\DwGGameMath\src\SphereIntersection.cpp" />
     <ClCompile Include="D:\Projects\DwGGameMath\src\dwgSimpleGraphics.cpp" />
