@@ -7,6 +7,7 @@ int SimpleSphereCollision()
 	if (!dwgInitApp(1600, 900, "DwG - Game Math"))
 		return 1;
 
+	// Position Based Chain Simulation
 
 	Vector3 c1 = { 0.f, 0.f, 0.f }; // center of sphere 1
 	Vector3 c2 = { 1.f, -1.f, 0.f }; // center of sphere 2
