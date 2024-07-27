@@ -6,3 +6,5 @@ int VectorSolarSystem();
 int SimpleSphereCollision();
 
 int SingleChainSimulation();
+
+int ClothSimulation();

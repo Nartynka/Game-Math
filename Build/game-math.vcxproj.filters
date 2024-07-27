@@ -19,6 +19,9 @@
     <ClCompile Include="..\src\SingleChainSimulation.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="..\src\ClothSimulation.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="D:\Projects\DwGGameMath\lib\vectormath\common.hpp">
