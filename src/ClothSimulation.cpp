@@ -1,5 +1,5 @@
 #include "dwgSimpleGraphics.h"
-#include "Exercises.h"
+//#include "Exercises.h"
 
 #include <chrono>
 #include <thread>
@@ -10,7 +10,7 @@ int ClothSimulation()
 	// init window and rendering with given width, height, and title of the window
 	if (!dwgInitApp(1600, 900, "DwG - Game Math"))
 		return 1;
-
+		
 
 	struct Particle
 	{
@@ -45,7 +45,7 @@ int ClothSimulation()
 		ElasticDistance horizontalConstrains[numHorizConstrains];
 
 		Vector3 origin;
-		Vector3 color;
+		Vector3 color = Vector3(-1);
 	};
 
 	const int numChains = 8;
@@ -54,7 +54,7 @@ int ClothSimulation()
 	{
 		Chain chains[numChains];
 		Vector3 origin = Vector3(3.5f, -3.f, 2.5f);
-		Vector3 spacing;
+		Vector3 spacing = Vector3(0.f, 0.f, 0.5f);
 	};
 
 	const int numCloths = 3;
@@ -68,6 +68,9 @@ int ClothSimulation()
 
 	cloths[2].origin = Vector3(1.5f, -1.5f, -1.f);
 	cloths[2].spacing = Vector3(-radius * 2.5f, -radius * 2.5f, 0.f);
+
+//	cloths[3].origin = Vector3(0.f, 0.f, 2.5f);
+//	cloths[3].spacing = Vector3(0.f, 0.f, -radius * 2.5f);
 
 	// chain 0 - red
 	// chain 1 - green
@@ -100,7 +103,7 @@ int ClothSimulation()
 			}
 
 			ch.particles[0].mass = 0.f;
-			if (i > 0)
+			if (i == 1 || i == 2)
 			{
 				ch.particles[numParticles - 1].mass = 0.f;
 			}
@@ -139,6 +142,30 @@ int ClothSimulation()
 		}
 	}
 
+	//for (int i = 0; i < numChains; ++i)
+	//{
+	//	if (i == 0)
+	//	{
+	//		cloths[3].chains[i].color = { 1.f, 0.f, 0.f };
+
+	//		cloths[3].chains[i].particles[numParticles - 1] = Particle();
+	//		cloths[3].chains[i].particles[numParticles - 2] = Particle();
+	//		cloths[3].chains[i].particles[numParticles - 3] = Particle();
+	//		cloths[3].chains[i].particles[numParticles - 4] = Particle();
+	//		
+	//		cloths[3].chains[i].constrains[numConstrains - 1] = ElasticDistance();
+	//		cloths[3].chains[i].constrains[numConstrains - 2] = ElasticDistance();
+	//		cloths[3].chains[i].constrains[numConstrains - 3] = ElasticDistance();
+	//		cloths[3].chains[i].constrains[numConstrains - 4] = ElasticDistance();
+
+	//		for (ElasticDistance& c : cloths[3].chains[i].horizontalConstrains)
+	//			c = ElasticDistance();
+	//		
+	//		continue;
+	//	}
+	//	
+	//	cloths[3].chains[i] = Chain();
+	//}
 
 	struct Sphere
 	{
@@ -195,6 +222,11 @@ int ClothSimulation()
 
 		colliders[1].pos.setY(-sinf(globalTime) * 2.5f + 2.f);
 		colliders[1].pos.setX(colliders[1].pos.getY() - 3.f);
+
+		
+		//cloths[3].chains[0].particles[0].pos.setX(sinf(dwgGlobalTime())-2.f);
+		//cloths[3].chains[0].particles[0].pos.setY(cosf(dwgGlobalTime())-2.f);
+
 
 		accumulatedTime += dt;
 
