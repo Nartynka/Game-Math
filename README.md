@@ -15,4 +15,4 @@ This repository contains projects focused on exploring mathematical concepts use
 #### *To Be Done*
 - *Solar System Simulation: created using matrixes*
 - *Solar System Simulation: created using quaternions*
-- *Path tracing*
+- [*Path tracing*](https://github.com/Nartynka/PathTracing)
