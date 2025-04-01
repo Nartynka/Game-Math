@@ -7,12 +7,14 @@ Base repository: https://github.com/FurballCat/DwGGameMath
 This repository contains projects focused on exploring mathematical concepts used in games.
 
 #### Current List of projects
-- **Cloth Simulation / Chain Simulation**
-- **Sphere Intersection**: with dot and cross products
+- **Sphere Intersection** with dot and cross products
 - **Simple Sphere Collision**
-- **Solar System Simulation**: created using vector math.
+- **Solar System Simulation** using vector math
+- **Cloth Simulation / Chain Simulation**: particle based
+
+https://github.com/user-attachments/assets/1addb9c7-11d2-4e45-8994-6d2f36e10c52
 
 #### *To Be Done*
-- *Solar System Simulation: created using matrixes*
-- *Solar System Simulation: created using quaternions*
-- [*Path tracing*](https://github.com/Nartynka/PathTracing)
+- **[*Path tracing*](https://github.com/Nartynka/PathTracing)**
+- *Solar System Simulation using matrixes*
+- *Solar System Simulation using quaternions*
